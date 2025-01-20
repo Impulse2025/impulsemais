@@ -1,7 +1,7 @@
 <!DOCTYPE html><html><head>
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Avantti</title>
+    <title>Curriculo++</title>
     <meta name="description" content="Kerri Premium Responsive Bootstrap 5.3.1 Personal Template">
     <meta name="keywords" content="bootstrap 5.3.1, premium, cv, personal, Portfolio, multipurpose">
     <meta name="author" content="SRBThemes">
@@ -127,6 +127,18 @@
 #contact-form button:hover {
     background-color: #4a2a84;
 }
+
+.carousel-indicators {
+    background-color: rgb(8, 10, 124); /* Cor de fundo preta */
+    color: black;
+    border: #2222b7;
+}
+
+.carousel-indicators .active {
+    color: black;
+    background-color: black; /* Cor preta para o indicador ativo */
+    opacity: 1; /* Torna o botão ativo completamente visível */
+}   
       </style>
 </head>
 <body>
@@ -205,22 +217,76 @@
                     <li>Contatos com gestores qualificados</li>
                     <li>Resultados em até 2 semanas</li>
                 </ul>
-                <a href="formcurriculo.html" class="btn btn-primary-custom mt-3">Solicite agora!</a>
+                <a href="https://docs.google.com/forms/d/1EbNNzpd8jwbM44ZPkN52SvIynh3DRhZ5l0-_wpVMRlw/preview" class="btn btn-primary-custom mt-3">Solicite agora!</a>
 
 
                 
                 <!-- Inclua os scripts do Bootstrap -->
           </div>
-            <div class="col-md-6 text-center image-highlight">
-                <!-- Imagem com evento de clique -->
-                <img 
-                    src="static/images/curriculo.jpeg" 
-                    alt="Exemplo de Currículo Profissional" 
-                    class="img-fluid"
-                    style="cursor: pointer;"
-                    data-bs-toggle="modal" 
-                    data-bs-target="#imageModal">
+          <div id="carouselExample" class="carousel slide col-md-6 text-center image-highlight" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
             </div>
+        
+            <!-- Slides --> 
+            <div class="carousel-inner">
+                <!-- Primeira imagem -->
+                <div class="carousel-item active">
+                    <img 
+                        src="static/images/curriculo1.jpeg" 
+                        class="d-block w-100" 
+                        style="height: 100%; object-fit: contain;" 
+                        alt="Exemplo de Currículo Profissional 1">
+                </div>
+                <!-- Segunda imagem -->
+                <div class="carousel-item">
+                    <img 
+                        src="static/images/curriculo2.jpeg" 
+                        class="d-block w-100" 
+                        style="height: 100%; object-fit: contain;" 
+                        alt="Exemplo de Currículo Profissional 2">
+                </div>
+                <!-- Terceira imagem -->
+                <div class="carousel-item">
+                    <img 
+                        src="static/images/curriculo3.jpeg" 
+                        class="d-block w-100" 
+                        style="height: 100%; object-fit: contain;" 
+                        alt="Exemplo de Currículo Profissional 3">
+                </div>
+                <!-- Quarta imagem -->
+                <div class="carousel-item">
+                    <img 
+                        src="static/images/curriculo4.jpeg" 
+                        class="d-block w-100" 
+                        style="height: 100%; object-fit: contain;" 
+                        alt="Exemplo de Currículo Profissional 4">
+                </div>
+                <!-- Quinta imagem -->
+                <div class="carousel-item">
+                    <img 
+                        src="static/images/curriculo5.jpeg" 
+                        class="d-block w-100" 
+                        style="height: 100%; object-fit: contain;" 
+                        alt="Exemplo de Currículo Profissional 5">
+                </div>
+            </div>
+        
+            <!-- Controles de navegação -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próxima</span>
+            </button>
+        </div>
             
             <!-- Modal para exibir a imagem ampliada -->
             <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
